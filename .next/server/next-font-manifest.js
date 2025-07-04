@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/brijesh/Documents/Programs/Portfolio/portfolio/app/layout":["static/media/c7f848bed9dd25a3-s.p.woff2","static/media/6003d19f21d09b15-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

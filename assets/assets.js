@@ -77,24 +77,29 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
+    title: "Suno Aubiobook",
     description: "Web Design",
     bgImage: "/work-1.png",
+    url: "https://www.sunoaudiobook.com",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Hello DigiSir",
+    description: "Hello",
     bgImage: "/work-2.png",
+    url: "https://www.hellodigisir.in/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "BookWorm 🪱",
+    description: "Android application- Share books you like with others.",
     bgImage: "/work-3.png",
+    url: "",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "KnowEx",
+    description:
+      "Andoid application- Join events, share resouces and much more.",
     bgImage: "/work-4.png",
+    url: "",
   },
 ];
 
@@ -120,9 +125,9 @@ export const serviceData = [
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.web_icon,
+    title: "Website Hosting",
+    description: "Hosting website and maintainace of website and much more...",
     link: "",
   },
 ];
@@ -133,13 +138,13 @@ export const infoList = [
     iconDark: assets.code_icon_dark,
     title: "Languages",
     description:
-      "HTML, CSS, JavaScript React Js, Next Js, Spring boot, Java, Mysql, MongoDB, Linux",
+      "HTML, CSS, JavaScript,Typescript, ReactJs, NextJs, Spring boot, Java, Mysql, PostgreSql, MongoDB, Redish, Linux",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.E in Computer Science",
+    description: `Bachlor of Engineering in Computer, HSC Computer Science`,
   },
   {
     icon: assets.project_icon,

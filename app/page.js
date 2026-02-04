@@ -8,8 +8,10 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import { useState, useEffect } from "react";
+
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
@@ -17,9 +19,10 @@ export default function Home() {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       setIsDarkMode(true);
-    } else {setIsDarkMode(true)};
-  },[])
- 
+    } else {
+      setIsDarkMode(false); // FIXED: Was incorrectly setting to true
+    }
+  }, []);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -30,6 +33,7 @@ export default function Home() {
       localStorage.theme = "";
     }
   }, [isDarkMode]);
+
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />

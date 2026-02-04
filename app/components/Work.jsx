@@ -30,15 +30,20 @@ const Work = () => {
                 {workData.map((project, index) => (
                     <motion.div whileHover={{ scale: 1.05 }} key={index} style={{ backgroundImage: `url(${project.bgImage})` }}
                         className="aspect-square rounded-lg relative cursor-pointer group">
-                        <div className="bg-white w-10/12  absolute  rounded-md bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                            <div>
-                                <h2 className="font-semibold">{project.title}</h2>
-                                <p className="text-sm text-gray-700" >{project.description}</p>
+
+
+                        <a href={project.url}>
+                            <div className="bg-white w-10/12  absolute  rounded-md bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                                <div>
+                                    <h2 className="font-semibold">{project.title}</h2>
+                                    <p className="text-sm text-gray-700" >{project.description}</p>
+                                </div>
+                                <div className=" rounded-full  w-9 aspect-square flex items-center justify-center group-hover:border-b group-hover:shadow-[2px_2px_0_#000] duration-500 group-hover:bg-lime-300 transition">
+                                    <Image src={assets.send_icon} alt='send icon' className="w-5 " />
+                                </div>
                             </div>
-                            <div className=" rounded-full  w-9 aspect-square flex items-center justify-center group-hover:border-b group-hover:shadow-[2px_2px_0_#000] duration-500 group-hover:bg-lime-300 transition">
-                                <Image src={assets.send_icon} alt='send icon' className="w-5 " />
-                            </div>
-                        </div>
+                        </a>
                     </motion.div>
                 ))}
 

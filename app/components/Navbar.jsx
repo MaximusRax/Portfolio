@@ -29,10 +29,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 w-11/12  -z-10 -translate-y-[80%] ">
+            <div className="fixed top-0 left-0 w-11/12  -z-10 -translate-y-[80%] dark:hidden ">
                 <Image src={assets.header_bg_color} alt='' className="w-full" />
             </div>
-            <nav className={`w-full fixed px-4 xl:px-[8%] my-4 flex items-center justify-between z-50 ${isScroll ? 
+            <nav className={`w-full fixed px-4 xl:px-[8%] my-4 flex items-center justify-between z-50 transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] ${isScroll ? 
                 " bg-white opacity-80 backdrop-blur-lg shadow-sm " : ''} `}>
                 <a href="#top">
                     <Image src={isDarkMode ? assets.logo:assets.logo} alt="" className="w-28 cursor-pointer mr-14" />

@@ -46,14 +46,14 @@ const Services = () => {
                     <motion.div
                         whileHover={{ scale: 1.05 }}
                         key={index}
-                        className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-2xl hover:bg-lightHover dark:hover:bg-darkHover cursor-pointer hover:-translate-y-2 duration-500 group"
+                        className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-2xl hover:bg-lightHover  cursor-pointer hover:-translate-y-2 duration-500 group"
                     >
                         <Image src={icon} alt='' className='w-10' />
-                        <h3 className="text-lg my-4 text-gray-700 dark:text-white">{title}</h3>
-                        <p className="text-sm text-gray-600 dark:text-white/80 leading-5">
+                        <h3 className="text-lg my-4 text-gray-700 ">{title}</h3>
+                        <p className="text-sm text-gray-600">
                             {description}
                         </p>
-                        {/* <a href={link} className="flex items-center gap-2 text-sm mt-5 text-gray-700 dark:text-white">
+                        {/* <a href={link} className="flex items-center gap-2 text-sm mt-5 text-gray-700">
                             Read more <Image alt='' src={assets.right_arrow} className="w-4 group-hover:translate-x-3 duration-300" />
                         </a> */}
                     </motion.div>

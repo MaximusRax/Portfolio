@@ -4,8 +4,8 @@ import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
-import project_icon_dark from "./project-icon-dark.png";
 import vscode from "./vscode.png";
+
 import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
@@ -44,7 +44,6 @@ export const assets = {
   edu_icon,
   edu_icon_dark,
   project_icon,
-  project_icon_dark,
   vscode,
   figma,
   git,
